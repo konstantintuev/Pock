@@ -6,11 +6,6 @@
   <img width="800" src="ScreenshotsAndImgs/general.png"/>
 </p>
 
-
-
-## macOS Catalina (10.15)
-If you are on macOS Catalina (10.15), please click [here](https://pock.dev/docs/catalina.html) and read carefully the suggestions to have a flawless experience.
-
 ## Want something implemented - open an issue/pull request
 This is mostly a personal project which started with the purchase of a TouchBar MacBook.
 I am implementing everything I find beneficial or useful and yes I do like the TouchBar (despite not the default one).
@@ -25,7 +20,11 @@ I don't have a support page but feel free to donate to the original author of Po
 2. Open Pock
 3. If you don't see Pock in your Touch Bar, go to the `Keyboard` pane in System Preferences and select "Touch Bar shows _App Controls_."
 
-
+## How to run
+1. Right click
+2. Open
+3. Accept
+4. Open an issue if you want an official signature and notarization from Apple
 
 ## Widgets
 
