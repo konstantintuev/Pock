@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +19,7 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="418" height="140"/>
+            <rect key="frame" x="0.0" y="0.0" width="421" height="140"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U87-QL-Rxd">
@@ -86,11 +86,11 @@
                     </constraints>
                 </box>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iOr-af-uPA">
-                    <rect key="frame" x="252" y="9" width="152" height="33"/>
+                    <rect key="frame" x="262" y="9" width="146" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="oiG-mG-BSb"/>
                     </constraints>
-                    <buttonCell key="cell" type="push" title="Check for updates" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MJG-ij-J6R">
+                    <buttonCell key="cell" type="push" title="Check for updates" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MJG-ij-J6R">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -99,10 +99,10 @@
                     </connections>
                 </button>
                 <stackView distribution="equalCentering" orientation="horizontal" alignment="top" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gis-kK-TBu">
-                    <rect key="frame" x="141" y="108" width="257" height="22"/>
+                    <rect key="frame" x="141" y="110" width="260" height="20"/>
                     <subviews>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RXF-pX-jNz">
-                            <rect key="frame" x="-2" y="0.0" width="140" height="24"/>
+                            <rect key="frame" x="-2" y="-1" width="135" height="22"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="oaN-BM-WNf"/>
                             </constraints>
@@ -115,7 +115,7 @@
                             </connections>
                         </button>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OvG-0j-ema">
-                            <rect key="frame" x="144" y="0.0" width="115" height="24"/>
+                            <rect key="frame" x="141" y="-1" width="119" height="22"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="ydu-eg-Qht"/>
                             </constraints>
@@ -138,7 +138,7 @@
                     </customSpacing>
                 </stackView>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="dg5-6U-vPP">
-                    <rect key="frame" x="139" y="72" width="140" height="33"/>
+                    <rect key="frame" x="139" y="74" width="137" height="33"/>
                     <textFieldCell key="cell" selectable="YES" title="Double press `⌃ Control` key to toggle between Pock and System Touch Bar." id="5UW-Vr-bYf">
                         <font key="font" metaFont="label" size="9"/>
                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -146,8 +146,8 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8bM-j0-g5L" userLabel="Hide Trash Checkbox">
-                    <rect key="frame" x="197" y="44" width="203" height="18"/>
-                    <buttonCell key="cell" type="check" title="Check for updates once a day" bezelStyle="regularSquare" imagePosition="left" inset="2" id="wxD-tO-31t">
+                    <rect key="frame" x="194" y="45" width="207" height="18"/>
+                    <buttonCell key="cell" type="check" title="Check for updates once a day" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="wxD-tO-31t">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>

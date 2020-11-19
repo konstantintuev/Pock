@@ -3,7 +3,7 @@
 <p align="center">It's free and open source, and it also brings some minimalistic widgets with it!
 </p>
 <p align="center">
-  <img width="800" src="https://pock.dev/assets/img/preview/pock_widgets.png"/>
+  <img width="800" src="ScreenshotsAndImgs/general.png"/>
 </p>
 
 
@@ -11,20 +11,12 @@
 ## macOS Catalina (10.15)
 If you are on macOS Catalina (10.15), please click [here](https://pock.dev/docs/catalina.html) and read carefully the suggestions to have a flawless experience.
 
-## Why can't I open an issue/pull request?
-I’m currently migrating all default widgets to make **Pock** independent from them. 
-At the end of the process, each widget will have its _dedicated repo_, where you'll be able to open new PRs. 
-I hope to publish the new sources soon alongside **PockKit**.
-
-The PRs that are currently opened will be merged manually in the dedicated widget repository
-
-**Thanks for your patience!**
+## Want something implemented - open an issue/pull request
+This is mostly a personal project which started with the purchase of a TouchBar MacBook.
+I am implementing everything I find beneficial or useful and yes I do like the TouchBar (despite not the default one).
 
 ## Thank you!
-
-If you want to support this project, you can [click here](https://paypal.me/pigigaldi)!
-Pock will always be available as free software!
-
+I don't have a support page but feel free to donate to the original author of Pock:  [Pigigaldi](https://paypal.me/pigigaldi)!
 
 
 ## How To Enable
@@ -48,10 +40,10 @@ It now includes multi-window support!
 *Enjoy your screen in full-size every time!*
 
 <div align="left">
-  <img width="500" src="https://pock.dev/assets/img/preview/widgets/pock_dock_widget.png"/>
+  <img width="500" src="ScreenshotsAndImgs/dock.png"/>
 </div>
 <div align="left" style="margin-top:6px">
-  <img width="500" src="https://pock.dev/assets/img/preview/widgets/pock_app_expose.png"/>
+  <img width="500" src="ScreenshotsAndImgs/dock_windows.png"/>
 </div>
 
 
@@ -67,7 +59,7 @@ Media information at a glance with gestures for media controls included.
 | swipe right | next song         |
 
 <div align="left">
-  <img width="500" src="https://pock.dev/assets/img/preview/widgets/pock_now_playing_widget.png"/>
+  <img width="500" src="ScreenshotsAndImgs/player.png"/>
 </div>
 
 
@@ -77,7 +69,7 @@ Media information at a glance with gestures for media controls included.
 A handy ESC button is there, just in case, so you don't have to hide Pock to access the system one.
 
 <div align="left">
-  <img width="500" src="https://pock.dev/assets/img/preview/widgets/pock_esc_widget.png"/>
+  <img width="500" src="ScreenshotsAndImgs/esc.png"/>
 </div>
 
 
@@ -85,9 +77,10 @@ A handy ESC button is there, just in case, so you don't have to hide Pock to acc
 ##### Status widget
 
 Always keep an eye on system information, like what time is it, or maybe WiFi status or Battery status. Configure Status items from settings.
+Tap to switch keyboard input, open calendar, battery overview, long click the battery to switch between percentages and time remaining.
 
 <div align="left">
-  <img width="500" src="https://pock.dev/assets/img/preview/widgets/pock_status_widget.png"/>
+  <img width="500" src="ScreenshotsAndImgs/status.png"/>
 </div>
 
 
@@ -98,19 +91,14 @@ Change screen brightness or system volume with easy controls.
 Long press or slide on control center item to invoke sliders.
 
 <div align="left">
-  <img width="500" src="https://pock.dev/assets/img/preview/widgets/pock_control_center_widget.png"/>
+  <img width="500" src="ScreenshotsAndImgs/control_center.png"/>
 </div>
 
 
 
 ##### More...
 
-More widgets are coming!
-Keep search for #pock on social media to be updated on future widgets releases!
-
-<div align="left">
-  <img width="500" src="https://pock.dev/assets/img/preview/widgets/pock_more_widget.png"/>
-</div>
+More widgets may be added, open an issue/pull request or wait for me to come up with something!
 
 
 
@@ -119,9 +107,9 @@ Keep search for #pock on social media to be updated on future widgets releases!
 You can adjust Pock and widgets settings to reflects your specific needs. You can access these panes from the **Preferences** menu item.
 
 <div display="float">
-  <img width="262" src="https://pock.dev/assets/img/preview/preferences/preference_dock_widget.png"/>
-  <img width="262" src="https://pock.dev/assets/img/preview/preferences/preference_general.png"/>
-  <img width="262" src="https://pock.dev/assets/img/preview/preferences/preference_status_widget.png"/>
+  <img width="262" src="ScreenshotsAndImgs/dock_prefs.png"/>
+  <img width="262" src="ScreenshotsAndImgs/now_playing_prefs.png"/>
+  <img width="262" src="ScreenshotsAndImgs/status_prefs.png"/>
 </div>
 
 ## Customize
@@ -129,25 +117,20 @@ You can adjust Pock and widgets settings to reflects your specific needs. You ca
 You can customize the widget position in TouchBar from the **Customize** menu item.
 
 <div align="left">
-  <img src="https://pock.dev/assets/img/preview/pock_customize.png"/>
-</div>
-
-
-
-## Developers
-
-<p align="left">Do you want to build a custom widget for Pock?
-  Soon you will be able to do it, with <b>PockKit</b>!
-</p>
-
-<div align="center">
-  <img width="260" src="https://pock.dev/assets/img/preview/developers/xcode_plus_pockkit.png"/>
+  <img src="ScreenshotsAndImgs/customize.png"/>
 </div>
 
 
 
 ## Special mentions
 
+From Me:
+* [Apple Juice](https://github.com/raphaelhanneken/apple-juice)
+* [Music Bar](https://github.com/musa11971/Music-Bar)
+* [Kawa](https://github.com/utatti/kawa)
+
+From Pigigaldi:
+* [Pigigaldi](https://github.com/pigigaldi/Pock)
 * [BrokenSt0rm](https://twitter.com/BrokenSt0rm) 🙅‍♂️
 * [SnapKit](https://github.com/SnapKit/SnapKit)
 * [Magnet, LoginServiceKit](https://github.com/Clipy)
@@ -158,7 +141,7 @@ You can customize the widget position in TouchBar from the **Customize** menu it
 
 
 
-## Translated READMEs
+## Translated READMEs (mostly from Pigigaldi's Pock)
 
 🇺🇸 [English](README.md)
 🇨🇳 [中文](.github/readmes/README.cn.md)
@@ -166,13 +149,6 @@ You can customize the widget position in TouchBar from the **Customize** menu it
 🇹🇷 [Türkçe](.github/readmes/README.tr.md)
 
 <small>* Some translations may be different or incomplete</small>.
-
-
-
-## Info
-
-**Pock** will never be a commercial package.
-
 
 
 ## License
