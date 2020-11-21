@@ -21,10 +21,13 @@ I don't have a support page but feel free to donate to the original author of Po
 3. If you don't see Pock in your Touch Bar, go to the `Keyboard` pane in System Preferences and select "Touch Bar shows _App Controls_."
 
 ## How to run
-1. Right click
+1. Unzip
 2. Open
 3. Accept
-4. Open an issue if you want an official signature and notarization from Apple
+
+## Issue resolving
+If some Control Center widgets (e.g. volume up/down) don't work, please remove the app from Accessability and Screen Recording in System Preferemces and add it again.
+If it still doesn't work, remove the app from Applications, reset all premissions by running `sudo tccutil reset All` in the Terminal, restart, add it again and grant the needed Accessability and Screen Recording permissions again.
 
 ## Widgets
 
