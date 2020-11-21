@@ -71,8 +71,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             menu.addItem(withTitle: "Preferences…".localized, action: #selector(openPreferences),   keyEquivalent: ",")
             menu.addItem(withTitle: "Customize…".localized,   action: #selector(openCustomization), keyEquivalent: "c")
             menu.addItem(NSMenuItem.separator())
-            menu.addItem(withTitle: "Support the original creator".localized, action: #selector(openDonateURL),  keyEquivalent: "s")
-            menu.addItem(NSMenuItem.separator())
             menu.addItem(withTitle: "Quit Pock".localized, action: #selector(NSApp.terminate), keyEquivalent: "q")
             pockStatusbarIcon.menu = menu
         }
@@ -169,10 +167,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc private func openCustomization() {
         (_navController?.rootController as? PockMainController)?.openCustomization()
     }
-    
-    @objc private func openDonateURL() {
-        guard let url = URL(string: "https://paypal.me/pigigaldi") else { return }
-        NSWorkspace.shared.open(url)
-    }
-    
 }
