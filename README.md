@@ -15,15 +15,12 @@ I don't have a support page but feel free to donate to the original author of Po
 
 
 ## How To Enable
-
-1. Move Pock to your Applications folder
-2. Open Pock
-3. If you don't see Pock in your Touch Bar, go to the `Keyboard` pane in System Preferences and select "Touch Bar shows _App Controls_."
-
-## How to run
 1. Unzip
-2. Open
-3. Accept
+2. Move Pock to your Applications folder
+3. Open Pock
+4. Accept
+5. If you don't see Pock in your Touch Bar, go to the `Keyboard` pane in System Preferences and select "Touch Bar shows _App Controls_."
+
 
 ## Issue resolving
 If some Control Center widgets (e.g. volume up/down) don't work, please remove the app from Accessability and Screen Recording in System Preferemces and add it again.
