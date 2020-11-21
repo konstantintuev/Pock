@@ -52,3 +52,21 @@ func == (lhs: BatteryState, rhs: BatteryState) -> Bool {
         return false
     }
 }
+
+///  Compares two BatteryStatusTypes for exact equality.
+///
+///  - parameter lhs: A BatteryStatusType.
+///  - parameter rhs: Another BatteryStatusType.
+///  - returns:       True if the supplied BatteryStatusType's are exactly equal. Otherwise false.
+func === (lhs: BatteryState, rhs: BatteryState) -> Bool {
+    switch (lhs, rhs) {
+    case (.chargedAndPlugged, .chargedAndPlugged):
+        return true
+    case let (.discharging(lhsPercentage), .discharging(rhsPercentage)):
+        return lhsPercentage == rhsPercentage
+    case let (.charging(lhsPercentage), .charging(rhsPercentage)):
+        return lhsPercentage == rhsPercentage
+    default:
+        return false
+    }
+}

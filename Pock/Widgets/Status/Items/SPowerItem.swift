@@ -137,9 +137,11 @@ class SPowerItem: StatusItem, ClickListener {
     ///  - parameter batter: The battery to render the status bar icon for.
     private func setBatteryStatus(_ battery: BatteryService?) {
         if let batteryState = battery?.state {
-            if lastPercentage != batteryState {
+            if lastPercentage == nil || !(lastPercentage! === batteryState) {
+                if (lastPercentage != batteryState) {
+                    setBatteryIcon(batteryState)
+                }
                 lastPercentage = batteryState
-                setBatteryIcon(batteryState)
                 if !shouldShowBatteryTime {
                     setTitle(battery)
                 }
