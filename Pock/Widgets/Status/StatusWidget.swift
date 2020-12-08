@@ -29,7 +29,6 @@ class StatusWidget: PKWidget {
     required init() {
         self.customizationLabel = "Status".localized
         self.initStackView()
-        self.loadStatusElements()
         self.view = stackView
     }
     
@@ -39,6 +38,7 @@ class StatusWidget: PKWidget {
     }
     
     func viewDidAppear() {
+        self.loadStatusElements()
         NSWorkspace.shared.notificationCenter.addObserver(forName: .shouldReloadStatusWidget, object: nil, queue: .main, using: { [weak self] _ in
             self?.loadStatusElements(needsUnload: true)
         })
