@@ -10,9 +10,11 @@
 This is mostly a personal project which started with the purchase of a TouchBar MacBook.
 I am implementing everything I find beneficial or useful and yes I do like the TouchBar (despite not the default one).
 
+## Apple Silicon + Intel
+PockV2 natively supports Apple Silicon but has only been tested on an Intel Mac.
+
 ## Thank you!
 I don't have a support page but feel free to donate to the original author of Pock:  [Pigigaldi](https://paypal.me/pigigaldi)!
-
 
 ## How To Enable
 1. Unzip
