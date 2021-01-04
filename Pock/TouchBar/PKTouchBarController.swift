@@ -130,12 +130,24 @@ extension PKTouchBarController {
     
     @objc private func willEnterCustomization(_ sender: Any?) {
         self.dismiss()
+        if let item = self.touchBar!.item(forIdentifier: NSTouchBarItem.Identifier.status) {
+            item.viewController?.viewDidAppear()
+        }
+        if let item = self.touchBar!.item(forIdentifier: NSTouchBarItem.Identifier.nowPlaying) {
+            item.viewController?.viewDidAppear()
+        }
     }
     
     @objc private func didExitCustomization(_ sender: Any?) {
         NSApp.touchBar = nil
         self.removeCustomizationObservers()
         self.present()
+        if let item = self.touchBar!.item(forIdentifier: NSTouchBarItem.Identifier.status) {
+            item.viewController?.viewDidDisappear()
+        }
+        if let item = self.touchBar!.item(forIdentifier: NSTouchBarItem.Identifier.nowPlaying) {
+            item.viewController?.viewDidDisappear()
+        }
     }
     
 }

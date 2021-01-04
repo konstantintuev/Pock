@@ -57,41 +57,36 @@ class NowPlayingItemView: PKDetailView {
         
         let path = NSWorkspace.shared.absolutePathForApplication(withBundleIdentifier: appBundleIdentifier)
         
-        DispatchQueue.main.async { [weak self] in
-            if self == nil {
-                return
-            }
-            if Defaults[.showArtwork], let imageData = self?.nowPLayingItem?.image {
-                self?.imageView.image = NSImage(data: imageData)
-            } else {
-                self?.imageView.image = DockRepository.getIcon(forBundleIdentifier: appBundleIdentifier, orPath: path)
-            }
-            
-            let isPlaying = self?.nowPLayingItem?.isPlaying ?? false
-            var title     = self?.nowPLayingItem?.title     ?? "Tap here".localized
-            var artist    = self?.nowPLayingItem?.artist    ?? "to play music".localized
-            
-            if title.isEmpty {
-                title = "Missing title".localized
-            }
-            if artist.isEmpty {
-                artist = "Unknown artist".localized
-            }
-            
-            let titleWidth    = (title  as NSString).size(withAttributes: self?.titleView.textFontAttributes    ?? [:]).width
-            let subtitleWidth = (artist as NSString).size(withAttributes: self?.subtitleView.textFontAttributes ?? [:]).width
-            self?.maxWidth = min(max(titleWidth, subtitleWidth), 80)
-            
-            self?.titleView.setup(string:    title)
-            self?.subtitleView.setup(string: artist)
-            
-            self?.titleView.speed    = titleWidth    > 80 && isPlaying ? 4 : 0
-            self?.subtitleView.speed = subtitleWidth > 80 && isPlaying ? 4 : 0
-            
-            self?.updateForNowPlayingState()
-            self?.updateConstraint()
-            self?.layoutSubtreeIfNeeded()
+        if Defaults[.showArtwork], let imageData = self.nowPLayingItem?.image {
+            self.imageView.image = NSImage(data: imageData)
+        } else {
+            self.imageView.image = DockRepository.getIcon(forBundleIdentifier: appBundleIdentifier, orPath: path)
         }
+        
+        let isPlaying = self.nowPLayingItem?.isPlaying ?? false
+        var title     = self.nowPLayingItem?.title     ?? "Tap here".localized
+        var artist    = self.nowPLayingItem?.artist    ?? "to play music".localized
+        
+        if title.isEmpty {
+            title = "Missing title".localized
+        }
+        if artist.isEmpty {
+            artist = "Unknown artist".localized
+        }
+        
+        let titleWidth    = (title  as NSString).size(withAttributes: self.titleView.textFontAttributes).width
+        let subtitleWidth = (artist as NSString).size(withAttributes: self.subtitleView.textFontAttributes ).width
+        self.maxWidth = min(max(titleWidth, subtitleWidth), 80)
+        
+        self.titleView.setup(string:    title)
+        self.subtitleView.setup(string: artist)
+        
+        self.titleView.speed    = titleWidth    > 80 && isPlaying ? 4 : 0
+        self.subtitleView.speed = subtitleWidth > 80 && isPlaying ? 4 : 0
+        
+        self.updateForNowPlayingState()
+        self.updateConstraint()
+        self.layoutSubtreeIfNeeded()
     }
     
     private func updateForNowPlayingState() {

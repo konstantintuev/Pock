@@ -72,7 +72,9 @@ class NowPlayingHelper {
                 self?.nowPlayingItem.title  = nil
             }
             self?.lastNowPlayingItem?.appBundleIdentifier = self?.nowPlayingItem.appBundleIdentifier
-            NotificationCenter.default.post(name: NowPlayingHelper.kNowPlayingItemDidChange, object: nil)
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: NowPlayingHelper.kNowPlayingItemDidChange, object: nil)
+            }
         })
     }
     
@@ -166,7 +168,9 @@ class NowPlayingHelper {
             self.updateArtwork(search: "\(self.nowPlayingItem.title ?? "") \(self.nowPlayingItem.artist ?? "")".replacingOccurrences(of: " ", with: "+").addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!) { image in
                 if (image != nil) {
                     self.nowPlayingItem.image = image
-                    NotificationCenter.default.post(name: NowPlayingHelper.kNowPlayingItemDidChange, object: nil)
+                    DispatchQueue.main.async {
+                        NotificationCenter.default.post(name: NowPlayingHelper.kNowPlayingItemDidChange, object: nil)
+                    }
                 }
             }
         }

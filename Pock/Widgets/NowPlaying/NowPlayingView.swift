@@ -57,12 +57,7 @@ class NowPlayingView: PKView {
     /// Data
     public var item: NowPlayingItem? = nil {
         didSet {
-            DispatchQueue.main.async { [weak self] in
-                if self == nil {
-                    return
-                }
-                self?.updateContentViews()
-            }
+            self.updateContentViews()
         }
     }
     

@@ -120,7 +120,7 @@ extension Defaults.Keys {
     static let isVolumeMute                     = Defaults.Key<Bool>("isVolumeMute",                    default: false)
     static let shouldShowVolumeToggleItem       = Defaults.Key<Bool>("shouldShowVolumeToggleItem",      default: false)
     /// Now Playing widget
-    static let nowPlayingWidgetStyle            = Defaults.Key<NowPlayingWidgetStyle>("nowPlayingWidgetStyle", default: .default)
+    static let nowPlayingWidgetStyle            = Defaults.Key<NowPlayingWidgetStyle>("nowPlayingWidgetStyle", default: .onlyInfo)
     static let hideNowPlayingIfNoMedia          = Defaults.Key<Bool>("hideNowPlayingIfNoMedia", default: false)
     static let animateIconWhilePlaying          = Defaults.Key<Bool>("animateIconWhilePlaying", default: true)
     static let showArtwork                      = Defaults.Key<Bool>("showArtwork", default: true)
