@@ -9,8 +9,8 @@
 import Cocoa
 import Defaults
 import Preferences
-import Fabric
-import Crashlytics
+//import Fabric
+//import Crashlytics
 import Magnet
 @_exported import PockKit
 

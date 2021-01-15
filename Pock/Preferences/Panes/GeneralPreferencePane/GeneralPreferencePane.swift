@@ -21,10 +21,11 @@ final class GeneralPreferencePane: NSViewController, PreferencePane {
     @IBOutlet weak var checkForUpdatesButton:              NSButton!
     
     /// Endpoint
+    /// TODO: maybe add an update check UR
     #if DEBUG
-    private let latestVersionURLString: String = "https://pock.dev/api/dev/latestRelease.json"
+    private let latestVersionURLString: String = ""
     #else
-    private let latestVersionURLString: String = "https://pock.dev/api/latestRelease.json"
+    private let latestVersionURLString: String = ""
     #endif
     
     /// Updates
@@ -136,6 +137,11 @@ extension GeneralPreferencePane {
     }
     
     func hasLatestVersion(completion: @escaping (String?, URL?) -> Void) {
+        //while there is no update url, just report no update available
+        if (latestVersionURLString.isEmpty) {
+            completion(nil, nil)
+            return
+        }
         let latestVersionURL: URL = URL(string: latestVersionURLString)!
         let request = URLRequest(url: latestVersionURL, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 60.0)
         URLSession.shared.invalidateAndCancel()
