@@ -14,7 +14,7 @@ I am implementing everything I find beneficial or useful and yes I do like the T
 PockV2 natively supports Apple Silicon but has only been tested on an Intel Mac.
 
 ## Thank you!
-I don't have a support page but feel free to donate to the original author of Pock:  [Pigigaldi](https://paypal.me/pigigaldi)!
+I don't have a support page but I use this project everyday and I like working on it!
 
 ## How To Enable
 1. Unzip
@@ -27,6 +27,11 @@ I don't have a support page but feel free to donate to the original author of Po
 ## Issue resolving
 If some Control Center widgets (e.g. volume up/down) don't work, please remove the app from Accessability and Screen Recording in System Preferemces and add it again.
 If it still doesn't work, remove the app from Applications, reset all premissions by running `sudo tccutil reset All` in the Terminal, restart, add it again and grant the needed Accessability and Screen Recording permissions again.
+
+## Known issues
+The brightness control doesn't work on M1 Macs.
+The way M1 Macs handle displays is non-standard and buggy.
+[This issue for Monitor Control](https://github.com/MonitorControl/MonitorControl/issues/323) is one of the more active ones trying to resolve the issue, I will try monitoring it and implementing the fixes the people might come up with there.
 
 ## Widgets
 

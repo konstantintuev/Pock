@@ -16,3 +16,9 @@ Pock.xcworkspace/xcuserdata/
 ## Don't track Fabric
 Fabric.framework
 FabricEnv
+
+## Idea
+.idea
+
+## Xcode userdata
+**/xcuserdata/*
