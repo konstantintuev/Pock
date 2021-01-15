@@ -31,7 +31,7 @@ If it still doesn't work, remove the app from Applications, reset all premission
 ## Known issues
 The brightness control doesn't work on M1 Macs.
 The way M1 Macs handle displays is non-standard and buggy.
-[This issue for Monitor Control](https://github.com/MonitorControl/MonitorControl/issues/323) is one of the more active ones trying to resolve the issue, I will try monitoring it and implementing the fixes the people might come up with there.
+[This issue for Monitor Control](https://github.com/MonitorControl/MonitorControl/issues/323) is one of the more active ones trying to resolve the issue, I will try monitoring it and implementing the fixes the people there might come up with.
 
 ## Widgets
 

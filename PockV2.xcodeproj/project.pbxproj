@@ -94,7 +94,6 @@
 		9955665222DC668500EFFE6D /* CCVolumeMuteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9955665122DC668500EFFE6D /* CCVolumeMuteItem.swift */; };
 		999276BE249FD8C300EFF44A /* SLangItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999276BD249FD8C300EFF44A /* SLangItem.swift */; };
 		99A4FC742566AD5900BFD91F /* PKClickableElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4FC732566AD5900BFD91F /* PKClickableElements.swift */; };
-		99A4FC782566BB0000BFD91F /* ScreenshotsAndImgs in Resources */ = {isa = PBXBuildFile; fileRef = 99A4FC772566BB0000BFD91F /* ScreenshotsAndImgs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,9 +227,12 @@
 		9951000D2565912200E34E4D /* NSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
 		9951000E2565912200E34E4D /* StatusBarIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarIcon.swift; sourceTree = "<group>"; };
 		9955665122DC668500EFFE6D /* CCVolumeMuteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCVolumeMuteItem.swift; sourceTree = "<group>"; };
+		9971DAAC25B1662E00EB40FA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9971DAAD25B1663600EB40FA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9971DAAF25B1688B00EB40FA /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9971DAB125B168A100EB40FA /* ScreenshotsAndImgs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ScreenshotsAndImgs; sourceTree = "<group>"; };
 		999276BD249FD8C300EFF44A /* SLangItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLangItem.swift; sourceTree = "<group>"; };
 		99A4FC732566AD5900BFD91F /* PKClickableElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKClickableElements.swift; sourceTree = "<group>"; };
-		99A4FC772566BB0000BFD91F /* ScreenshotsAndImgs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ScreenshotsAndImgs; sourceTree = "<group>"; };
 		AAA3636F2333699C0016267D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/DockFolderController.strings"; sourceTree = "<group>"; };
 		AAA363702333699C0016267D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/GeneralPreferencePane.strings"; sourceTree = "<group>"; };
 		AAA363712333699C0016267D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StatusWidgetPreferencePane.strings"; sourceTree = "<group>"; };
@@ -599,7 +601,10 @@
 		348343CD1F631B2E00CDA005 = {
 			isa = PBXGroup;
 			children = (
-				99A4FC772566BB0000BFD91F /* ScreenshotsAndImgs */,
+				9971DAAF25B1688B00EB40FA /* Podfile */,
+				9971DAAD25B1663600EB40FA /* LICENSE */,
+				9971DAAC25B1662E00EB40FA /* README.md */,
+				9971DAB125B168A100EB40FA /* ScreenshotsAndImgs */,
 				342D83932278D5CF000D79DA /* Pock */,
 				348343D71F631B2E00CDA005 /* Products */,
 				2F31B7DC05EFA1E8090C87AE /* Pods */,
@@ -751,7 +756,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				962E0A5522CF1D1D00567E20 /* DockFolderController.xib in Resources */,
-				99A4FC782566BB0000BFD91F /* ScreenshotsAndImgs in Resources */,
 				347D7EE7230874A800BA9200 /* ControlCenterWidgetPreferencePane.xib in Resources */,
 				342D83DF2278D5CF000D79DA /* MainWindow.xib in Resources */,
 				3418DA022288318A00E11E37 /* PKSlideableController.xib in Resources */,
@@ -1113,10 +1117,11 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 84;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = F8SDS384FD;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -1124,7 +1129,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Pock/Various/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12.2;
-				MARKETING_VERSION = 0.8.3;
+				MARKETING_VERSION = 0.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = touev.konstantin.pockv2.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1142,9 +1147,10 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 84;
 				DEVELOPMENT_TEAM = F8SDS384FD;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -1152,7 +1158,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Pock/Various/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12.2;
-				MARKETING_VERSION = 0.8.3;
+				MARKETING_VERSION = 0.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = touev.konstantin.pockv2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
